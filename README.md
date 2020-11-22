@@ -6,7 +6,8 @@ Since the experiment lasted several months, including extensive testing with mul
 
 The architecture of BinTuner:
 ---------------------
-![image](https://github.com/BinTuner/Dev/blob/master/Results/Images/BinTuner.png)
+![image](https://github.com/BinTuner/Dev/blob/main/Results/Images/BinTuner.png)
+
 
 
 The core on the server-side is a metaheuristic search engine (e.g., the genetic algorithm), which directs iterative compilation towards maximizing the effect of binary code differences. 
