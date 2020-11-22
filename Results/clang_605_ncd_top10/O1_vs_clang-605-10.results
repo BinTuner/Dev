@@ -1,0 +1,1135 @@
+O1
+clang-605-10
+call graph1 MD index 3.628009241372382
+call graph2 MD index 1.320836805056694
+
+ --------- statistics ---------
+basicBlock matches (library)................................:      0
+basicBlock matches (non-library)............................:    167
+basicBlocks primary (library)...............................:      0
+basicBlocks primary (non-library)...........................:    632
+basicBlocks secondary (library).............................:      0
+basicBlocks secondary (non-library).........................:    973
+flowGraph edge matches (library)............................:      0
+flowGraph edge matches (non-library)........................:    129
+flowGraph edges primary (library)...........................:      0
+flowGraph edges primary (non-library).......................:    872
+flowGraph edges secondary (library).........................:      0
+flowGraph edges secondary (non-library).....................:   1474
+function matches (library)..................................:     38
+function matches (non-library)..............................:     38
+functions primary (library).................................:     40
+functions primary (non-library).............................:     70
+functions secondary (library)...............................:     42
+functions secondary (non-library)...........................:     39
+instruction matches (library)...............................:      0
+instruction matches (non-library)...........................:    516
+instructions primary (library)..............................:      0
+instructions primary (non-library)..........................:   3498
+instructions secondary (library)............................:      0
+instructions secondary (non-library)........................:   5376
+
+basicBlock: MD index matching (bottom up)...................:      1
+basicBlock: MD index matching (top down)....................:     25
+basicBlock: call reference matching.........................:      1
+basicBlock: edges Lengauer Tarjan dominated.................:      5
+basicBlock: edges MD index (bottom up)......................:     10
+basicBlock: edges MD index (top down).......................:     37
+basicBlock: edges prime product.............................:     46
+basicBlock: entry point matching............................:      4
+basicBlock: jump sequence matching..........................:      3
+basicBlock: loop entry matching.............................:      4
+basicBlock: prime matching (0 instructions minimum).........:      4
+basicBlock: prime matching (4 instructions minimum).........:      2
+basicBlock: propagation (size==1)...........................:     22
+basicBlock: relaxed MD index matching.......................:      3
+function: address sequence..................................:      1
+function: call sequence matching(exact).....................:      1
+function: name hash matching................................:     74
+
+similarity: 0.2721048837680466
+confidence: 0.924573427581785
+
+individual confidence values used: 
+basicBlock: MD index matching (bottom up)...................:    0.7
+basicBlock: MD index matching (top down)....................:    0.7
+basicBlock: call reference matching.........................:    0.8
+basicBlock: edges Lengauer Tarjan dominated.................:    0.4
+basicBlock: edges MD index (bottom up)......................:    0.7
+basicBlock: edges MD index (top down).......................:    0.7
+basicBlock: edges prime product.............................:      1
+basicBlock: entry point matching............................:    0.2
+basicBlock: exit point matching.............................:    0.1
+basicBlock: hash matching (4 instructions minimum)..........:      1
+basicBlock: instruction count matching......................:      0
+basicBlock: jump sequence matching..........................:      0
+basicBlock: loop entry matching.............................:    0.4
+basicBlock: prime matching (0 instructions minimum).........:    0.5
+basicBlock: prime matching (4 instructions minimum).........:    0.9
+basicBlock: propagation (size==1)...........................:      0
+basicBlock: relaxed MD index matching.......................:    0.6
+basicBlock: self loop matching..............................:    0.3
+basicBlock: string references matching......................:    0.8
+function: MD index matching (callGraph MD index, bottom up).:    0.8
+function: MD index matching (callGraph MD index, top down)..:    0.8
+function: MD index matching (flowgraph MD index, bottom up).:    0.9
+function: MD index matching (flowgraph MD index, top down)..:    0.9
+function: address sequence..................................:    0.4
+function: call reference matching...........................:   0.75
+function: call sequence matching(exact).....................:    0.1
+function: call sequence matching(sequence)..................:      0
+function: call sequence matching(topology)..................:      0
+function: edges callgraph MD index..........................:    0.9
+function: edges flowgraph MD index..........................:      1
+function: hash matching.....................................:      1
+function: instruction count.................................:    0.4
+function: loop count matching...............................:    0.6
+function: name hash matching................................:      1
+function: prime signature matching..........................:    0.9
+function: relaxed MD index matching.........................:    0.7
+function: string references.................................:    0.7
+
+ --------- matched 76 of 70/39 (40/42) ------------ 
+400848	4008a8	1	0.99	0.24	0.24	0	0	function: name hash matching	".init_proc"	".init_proc"
+	3	3	3
+	400848	4008a8	basicBlock: edges prime product
+		4	4	4
+		400848	4008a8
+		40084c	4008ac
+		400853	4008b3
+		400856	4008b6
+	400858	4008b8	basicBlock: edges prime product
+		1	1	1
+		400858	4008b8
+	40085d	4008bd	basicBlock: edges prime product
+		2	2	2
+		40085d	4008bd
+		400861	4008c1
+400880	4008e0	1	0.97	0	0	0	0	function: name hash matching	".free"	".free"
+	1	1	1
+	400880	4008e0	basicBlock: MD index matching (top down)
+		1	1	1
+		400880	4008e0
+400890	4008f0	1	0.97	0	0	0	0	function: name hash matching	".putchar"	".putchar"
+	1	1	1
+	400890	4008f0	basicBlock: MD index matching (top down)
+		1	1	1
+		400890	4008f0
+4008a0	400900	1	0.97	0	0	0	0	function: name hash matching	".strcpy"	".strcpy"
+	1	1	1
+	4008a0	400900	basicBlock: MD index matching (top down)
+		1	1	1
+		4008a0	400900
+4008b0	400910	1	0.97	0	0	0	0	function: name hash matching	".puts"	".puts"
+	1	1	1
+	4008b0	400910	basicBlock: MD index matching (top down)
+		1	1	1
+		4008b0	400910
+4008c0	400920	1	0.97	0	0	0	0	function: name hash matching	".fclose"	".fclose"
+	1	1	1
+	4008c0	400920	basicBlock: MD index matching (top down)
+		1	1	1
+		4008c0	400920
+4008d0	400940	1	0.97	0	0	0	0	function: name hash matching	".printf"	".printf"
+	1	1	1
+	4008d0	400940	basicBlock: MD index matching (top down)
+		1	1	1
+		4008d0	400940
+4008e0	400950	1	0.97	0	0	0	0	function: name hash matching	".memset"	".memset"
+	1	1	1
+	4008e0	400950	basicBlock: MD index matching (top down)
+		1	1	1
+		4008e0	400950
+4008f0	400960	1	0.97	0	0	0	0	function: name hash matching	".__libc_start_main"	".__libc_start_main"
+	1	1	1
+	4008f0	400960	basicBlock: MD index matching (top down)
+		1	1	1
+		4008f0	400960
+400900	400970	1	0.97	0	0	0	0	function: name hash matching	".fgets"	".fgets"
+	1	1	1
+	400900	400970	basicBlock: MD index matching (top down)
+		1	1	1
+		400900	400970
+400910	400980	1	0.97	0	0	0	0	function: name hash matching	".calloc"	".calloc"
+	1	1	1
+	400910	400980	basicBlock: MD index matching (top down)
+		1	1	1
+		400910	400980
+400920	400990	1	0.97	0	0	0	0	function: name hash matching	".fprintf"	".fprintf"
+	1	1	1
+	400920	400990	basicBlock: MD index matching (top down)
+		1	1	1
+		400920	400990
+400930	4009b0	1	0.97	0	0	0	0	function: name hash matching	".malloc"	".malloc"
+	1	1	1
+	400930	4009b0	basicBlock: MD index matching (top down)
+		1	1	1
+		400930	4009b0
+400940	4009c0	1	0.97	0	0	0	0	function: name hash matching	".fflush"	".fflush"
+	1	1	1
+	400940	4009c0	basicBlock: MD index matching (top down)
+		1	1	1
+		400940	4009c0
+400950	4009d0	1	0.97	0	0	0	0	function: name hash matching	".__isoc99_sscanf"	".__isoc99_sscanf"
+	1	1	1
+	400950	4009d0	basicBlock: MD index matching (top down)
+		1	1	1
+		400950	4009d0
+400960	4009e0	1	0.97	0	0	0	0	function: name hash matching	".realloc"	".realloc"
+	1	1	1
+	400960	4009e0	basicBlock: MD index matching (top down)
+		1	1	1
+		400960	4009e0
+400970	4009f0	1	0.97	0	0	0	0	function: name hash matching	".fopen"	".fopen"
+	1	1	1
+	400970	4009f0	basicBlock: MD index matching (top down)
+		1	1	1
+		400970	4009f0
+400980	4009a0	1	0.62	0	0	0	0	function: address sequence	".atoi"	".strtol"
+	1	1	1
+	400980	4009a0	basicBlock: MD index matching (top down)
+		1	1	1
+		400980	4009a0
+400990	400a00	1	0.97	0	0	0	0	function: name hash matching	".sprintf"	".sprintf"
+	1	1	1
+	400990	400a00	basicBlock: MD index matching (top down)
+		1	1	1
+		400990	400a00
+4009a0	400a10	1	0.97	0	0	0	0	function: name hash matching	".exit"	".exit"
+	1	1	1
+	4009a0	400a10	basicBlock: MD index matching (top down)
+		1	1	1
+		4009a0	400a10
+4009b0	400a20	1	0.97	0	0	0	0	function: name hash matching	".fwrite"	".fwrite"
+	1	1	1
+	4009b0	400a20	basicBlock: MD index matching (top down)
+		1	1	1
+		4009b0	400a20
+4009c0	400a30	1	0.97	0	0	0	0	function: name hash matching	"__gmon_start__"	"__gmon_start__"
+	1	1	1
+	4009c0	400a30	basicBlock: MD index matching (top down)
+		1	1	1
+		4009c0	400a30
+4009d0	400a60	1	0.99	0	0	0	0	function: name hash matching	"_start"	"_start"
+	1	1	1
+	4009d0	400a60	basicBlock: prime matching (4 instructions minimum)
+		12	12	12
+		4009d0	400a60
+		4009d2	400a62
+		4009d5	400a65
+		4009d6	400a66
+		4009d9	400a69
+		4009dd	400a6d
+		4009de	400a6e
+		4009df	400a6f
+		4009e6	400a76
+		4009ed	400a7d
+		4009f4	400a84
+		4009f9	400a89
+400a00	400a90	1	0.99	0.27	0.27	0	0	function: name hash matching	"deregister_tm_clones"	"deregister_tm_clones"
+	4	4	4
+	400a00	400a90	basicBlock: edges prime product
+		5	5	5
+		400a00	400a90
+		400a01	400a91
+		400a06	400a96
+		400a0c	400a9c
+		400a0f	400a9f
+	400a11	400aa1	basicBlock: edges prime product
+		3	3	3
+		400a11	400aa1
+		400a16	400aa6
+		400a19	400aa9
+	400a1b	400aab	basicBlock: edges prime product
+		3	3	3
+		400a1b	400aab
+		400a1c	400aac
+		400a21	400ab1
+	400a28	400ab8	basicBlock: edges prime product
+		2	2	2
+		400a28	400ab8
+		400a29	400ab9
+400a30	400ac0	1	0.99	0.27	0.27	0	0	function: name hash matching	"register_tm_clones"	"register_tm_clones"
+	4	4	4
+	400a30	400ac0	basicBlock: edges prime product
+		10	10	10
+		400a30	400ac0
+		400a35	400ac5
+		400a36	400ac6
+		400a3d	400acd
+		400a40	400ad0
+		400a44	400ad4
+		400a47	400ad7
+		400a4b	400adb
+		400a4e	400ade
+		400a51	400ae1
+	400a53	400ae3	basicBlock: edges prime product
+		3	3	3
+		400a53	400ae3
+		400a58	400ae8
+		400a5b	400aeb
+	400a5d	400aed	basicBlock: edges prime product
+		3	3	3
+		400a5d	400aed
+		400a5e	400aee
+		400a63	400af3
+	400a68	400af8	basicBlock: edges prime product
+		2	2	2
+		400a68	400af8
+		400a69	400af9
+400a70	400b00	1	0.99	0.21	0.21	0	0	function: name hash matching	"__do_global_dtors_aux"	"__do_global_dtors_aux"
+	3	3	3
+	400a70	400b00	basicBlock: edges prime product
+		2	2	2
+		400a70	400b00
+		400a77	400b07
+	400a79	400b09	basicBlock: edges prime product
+		6	6	6
+		400a79	400b09
+		400a7a	400b0a
+		400a7d	400b0d
+		400a82	400b12
+		400a89	400b19
+		400a8a	400b1a
+	400a90	400b20	basicBlock: edges prime product
+		1	1	1
+		400a90	400b20
+400aa0	400b30	1	0.99	0.26	0.26	0	0	function: name hash matching	"frame_dummy"	"frame_dummy"
+	5	5	5
+	400a30	400ac0	basicBlock: edges prime product
+		10	10	10
+		400a30	400ac0
+		400a35	400ac5
+		400a36	400ac6
+		400a3d	400acd
+		400a40	400ad0
+		400a44	400ad4
+		400a47	400ad7
+		400a4b	400adb
+		400a4e	400ade
+		400a51	400ae1
+	400a53	400ae3	basicBlock: edges prime product
+		3	3	3
+		400a53	400ae3
+		400a58	400ae8
+		400a5b	400aeb
+	400a5d	400aed	basicBlock: edges prime product
+		3	3	3
+		400a5d	400aed
+		400a5e	400aee
+		400a63	400af3
+	400a68	400af8	basicBlock: edges prime product
+		2	2	2
+		400a68	400af8
+		400a69	400af9
+	400aa0	400b30	basicBlock: edges prime product
+		4	4	4
+		400aa0	400b30
+		400aa1	400b31
+		400aa4	400b34
+		400aa5	400b35
+400bc0	400b40	0.11	0.69	0.47	5	0	0	function: name hash matching	"main"	"main"
+	9	9	606
+	400bc0	400b40	basicBlock: edges MD index (top down)
+		9	9	14
+		400bc0	400b40
+		400bc1	400b41
+		400bc3	400b43
+		400bc4	400b4a
+		400bc8	400b56
+		400bcb	400b5f
+		400bcd	400b67
+		400bd3	400b6d
+		400bd6	400b70
+	400bdc	400b76	basicBlock: edges prime product
+		22	22	22
+		400bdc	400b76
+		400be1	400b7b
+		400be6	400b80
+		400beb	400b85
+		400bf0	400b8a
+		400bf5	400b8f
+		400bfa	400b94
+		400bff	400b99
+		400c04	400b9e
+		400c09	400ba3
+		400c0e	400ba8
+		400c13	400bad
+		400c18	400bb2
+		400c1d	400bb7
+		400c1f	400bb9
+		400c24	400bbe
+		400c29	400bc3
+		400c34	400bce
+		400c38	400bd2
+		400c3d	400bd7
+		400c42	400bdc
+		400c45	400bdf
+	400c47	400be1	basicBlock: MD index matching (top down)
+		8	9	11
+		400c47	400be1
+		400c50	400be7
+		400c52	400bf1
+		400c55	400bfc
+		400c5a	400c01
+		400c5c	400c03
+		400c5e	400c05
+		400c63	400c0a
+	400c65	400c0c	basicBlock: edges prime product
+		2	2	2
+		400c65	400c0c
+		400c6f	400c16
+	400c73	400c1e	basicBlock: edges MD index (top down)
+		4	4	6
+		400c73	400c1e
+		400c78	400c28
+		400c7d	400c30
+		400c80	400c33
+	400c82	4014d7	basicBlock: propagation (size==1)
+		3	5	6
+		400c82	4014d7
+		400c87	4014df
+		400c8c	4014e4
+	400c98	400c39	basicBlock: edges MD index (top down)
+		8	15	13
+		400cab	400c41
+		400cba	400c46
+		400cbd	400c49
+		400cc2	400c4c
+		400cc7	400c61
+		400cca	400c68
+		400ccf	400c6b
+		400cd7	400c73
+	400cd9	400c79	basicBlock: propagation (size==1)
+		2	3	36
+		400cd9	400c79
+		400ce3	400cc3
+	400ce6	40153c	basicBlock: propagation (size==1)
+		1	6	3
+		400ce6	40153c
+400dc0	4045f0	0.47	0.72	0.83	1.4	0	0	function: name hash matching	"flow_cost"	"flow_cost"
+	18	19	36
+	400dc0	4045f0	basicBlock: entry point matching
+		4	4	7
+		400dc0	4045f1
+		400dc7	404605
+		400dce	40460c
+		400dd1	40460f
+	400dd3	404739	basicBlock: propagation (size==1)
+		1	3	3
+		400dd3	404739
+	400dfc	404615	basicBlock: propagation (size==1)
+		1	2	5
+		400dfc	40461f
+	400e06	404635	basicBlock: edges MD index (top down)
+		3	5	5
+		400e06	404635
+		400e1b	404642
+		400e1d	404644
+	400e20	404650	basicBlock: edges MD index (top down)
+		6	7	44
+		400e20	40465f
+		400e24	404675
+		400e27	40468b
+		400e2b	4046f3
+		400e2f	4046f7
+		400e33	4046fe
+	400e38	404707	basicBlock: propagation (size==1)
+		1	2	2
+		400e38	404707
+	400e3d	404861	basicBlock: edges prime product
+		4	4	4
+		400e3d	404861
+		400e41	404865
+		400e43	404867
+		400e46	404869
+	400e50	404870	basicBlock: edges prime product
+		2	2	2
+		400e50	404870
+		400e55	404875
+	400e57	404877	basicBlock: edges prime product
+		4	4	4
+		400e57	404877
+		400e5b	40487b
+		400e5e	40487e
+		400e60	404880
+	400e62	404882	basicBlock: edges prime product
+		2	2	2
+		400e62	404882
+		400e65	404885
+	400e67	404887	basicBlock: edges prime product
+		4	5	7
+		400e67	404887
+		400e6a	40488a
+		400e71	40488d
+		400e75	404891
+	400e80	4048a0	basicBlock: edges MD index (top down)
+		2	3	3
+		400e80	4048a0
+		400e84	4048a4
+	400e8a	4048bc	basicBlock: prime matching (0 instructions minimum)
+		1	1	1
+		400e8a	4048bc
+	400e8d	4048bf	basicBlock: propagation (size==1)
+		1	1	4
+		400e8d	4048bf
+	400e90	4048b0	basicBlock: edges prime product
+		3	3	3
+		400e90	4048b0
+		400e94	4048b4
+		400e98	4048b8
+	400e9a	4048ba	basicBlock: edges prime product
+		1	1	1
+		400e9a	4048ba
+	400e9c	4048ce	basicBlock: prime matching (0 instructions minimum)
+		2	2	2
+		400e9c	4048ce
+		400e9f	4048d0
+	400ea1	4048d2	basicBlock: propagation (size==1)
+		0	6	3
+401cb0	404c40	0.81	0.92	0.29	0.35	0	0	function: name hash matching	"arc_compare"	"arc_compare"
+	4	4	6
+	401cb0	404c40	basicBlock: edges MD index (top down)
+		6	6	9
+		401cb0	404c41
+		401cb3	404c51
+		401cb6	404c54
+		401cba	404c58
+		401cbf	404c5d
+		401cc3	404c61
+	401cc5	404c63	basicBlock: edges prime product
+		2	2	2
+		401cc5	404c63
+		401cca	404c68
+	401ccc	404c6a	basicBlock: edges prime product
+		5	5	5
+		401ccc	404c6a
+		401cce	404c6c
+		401cd0	404c6e
+		401cd5	404c73
+		401cda	404c78
+	401cdd	404c7b	basicBlock: propagation (size==1)
+		0	1	3
+401ce0	404900	0.86	0.95	0.51	0.63	0	0	function: name hash matching	"resize_prob"	"resize_prob"
+	9	9	11
+	401ce0	404900	basicBlock: entry point matching
+		13	13	14
+		401ce0	404900
+		401ce1	404901
+		401ce4	40490a
+		401ceb	40490e
+		401cf2	404915
+		401cf9	40491c
+		401cfc	40491f
+		401d03	404926
+		401d0a	404934
+		401d0e	404938
+		401d12	40493c
+		401d17	404941
+		401d1a	404944
+	401d20	40494a	basicBlock: edges prime product
+		10	11	11
+		401d20	40494a
+		401d27	404951
+		401d2e	404958
+		401d3c	40495f
+		401d40	404963
+		401d44	40496e
+		401d4b	404975
+		401d52	40497c
+		401d56	404980
+		401d59	404983
+	401d5b	404985	basicBlock: edges prime product
+		1	1	1
+		401d5b	404985
+	401d60	404990	basicBlock: edges prime product
+		3	3	3
+		401d60	404990
+		401d64	404994
+		401d67	404997
+	401d69	404999	basicBlock: edges prime product
+		3	3	3
+		401d69	404999
+		401d6d	40499d
+		401d70	4049a0
+	401d72	4049a2	basicBlock: edges prime product
+		2	2	2
+		401d72	4049a2
+		401d76	4049a6
+	401d78	4049a8	basicBlock: edges prime product
+		4	4	4
+		401d78	4049a8
+		401d7b	4049ab
+		401d82	4049ae
+		401d86	4049b2
+	401d88	4049b4	basicBlock: propagation (size==1)
+		7	9	10
+		401d88	4049b4
+		401d8f	4049bb
+		401d96	4049c2
+		401d9a	4049c6
+		401d9e	4049ca
+		401da3	4049cf
+		401daa	4049d6
+	401dae	4049e9	basicBlock: call reference matching
+		6	9	10
+		401dae	4049e9
+		401db5	4049ee
+		401db8	4049f5
+		401dbd	4049fa
+		401dc4	404a01
+		401dc9	404a06
+401ff0	404a30	0.46	0.64	0.68	0.91	0	0	function: name hash matching	"switch_arcs"	"switch_arcs"
+	15	15	23
+	401ff0	404a30	basicBlock: edges MD index (bottom up)
+		12	13	14
+		401ff0	404a30
+		401ff1	404a31
+		401ff3	404a33
+		401ff5	404a35
+		401ff7	404a37
+		401ff9	404a39
+		401ffa	404a3a
+		401ffe	404a3e
+		402003	404a47
+		402006	404a4c
+		40200e	404a4f
+		402014	404a59
+	40201a	404a5f	basicBlock: edges MD index (bottom up)
+		3	4	5
+		40201d	404a5f
+		40201f	404a62
+		402022	404a6d
+	402030	404a70	basicBlock: loop entry matching
+		2	8	4
+		402030	404a70
+		40203e	404a77
+	402053	404b06	basicBlock: edges MD index (bottom up)
+		1	3	2
+		402059	404b0b
+	402060	404b10	basicBlock: edges MD index (bottom up)
+		2	3	6
+		402060	404b10
+		402064	404b20
+	40206d	404bc6	basicBlock: edges prime product
+		0	3	1
+	402078	404bc8	basicBlock: edges prime product
+		0	1	3
+	40207a	404a83	basicBlock: edges MD index (bottom up)
+		3	3	4
+		40207a	404a87
+		40207e	404a8c
+		402081	404a90
+	402083	404a96	basicBlock: edges MD index (bottom up)
+		0	1	1
+	402090	404a9a	basicBlock: propagation (size==1)
+		16	20	24
+		402090	404a9a
+		402095	404a9f
+		40209a	404aa4
+		40209f	404aa9
+		4020a3	404aaf
+		4020a8	404ab7
+		4020ad	404abb
+		4020b3	404ac0
+		4020ba	404acc
+		4020be	404ad0
+		4020cd	404ad4
+		4020d1	404ad8
+		4020d4	404adc
+		4020d7	404ae0
+		4020e4	404ae2
+		4020e7	404af5
+	4020ec	404bb3	basicBlock: edges Lengauer Tarjan dominated
+		3	4	4
+		4020f0	404bb7
+		4020f4	404bbb
+		4020f7	404bbe
+	4020fd	404be0	basicBlock: edges Lengauer Tarjan dominated
+		2	10	3
+		4020fd	404be0
+		402117	404be4
+	402123	404bc4	basicBlock: prime matching (0 instructions minimum)
+		1	1	1
+		402123	404bc4
+	402125	404c14	basicBlock: propagation (size==1)
+		1	1	5
+		402125	404c14
+	402128	404bed	basicBlock: propagation (size==1)
+		1	9	3
+		402128	404bed
+4037b0	404ca0	0.81	0.92	0.29	0.35	0	0	function: name hash matching	"cost_compare"	"cost_compare"
+	4	4	6
+	4037b0	404ca0	basicBlock: edges MD index (top down)
+		6	6	9
+		4037b0	404ca1
+		4037b3	404cb1
+		4037b6	404cb4
+		4037ba	404cb8
+		4037bf	404cbd
+		4037c3	404cc1
+	4037c5	404cc3	basicBlock: edges prime product
+		2	2	2
+		4037c5	404cc3
+		4037ca	404cc8
+	4037cc	404cca	basicBlock: edges prime product
+		7	7	7
+		4037cc	404cca
+		4037cf	404ccd
+		4037d1	404ccf
+		4037d4	404cd2
+		4037d6	404cd4
+		4037db	404cd9
+		4037e0	404cde
+	4037e3	404ce1	basicBlock: propagation (size==1)
+		0	1	3
+403a60	404d00	0.27	0.61	1.9	4.7	0	0	function: name hash matching	"spec_qsort"	"spec_qsort"
+	60	76	236
+	403a60	404d00	basicBlock: entry point matching
+		19	31	24
+		403a60	404d00
+		403a61	404d01
+		403a63	404d03
+		403a65	404d05
+		403a67	404d07
+		403a69	404d09
+		403a6a	404d0a
+		403a6e	404d0e
+		403a71	404d11
+		403a74	404d14
+		403a77	404d17
+		403a82	404d20
+		403a88	404d25
+		403a8e	404d2e
+		403a92	404d31
+		403aa3	404d3a
+		403aaf	404d3e
+		403ab6	404d47
+		403abf	404d4b
+	403ac1	404d4d	basicBlock: propagation (size==1)
+		1	2	4
+		403ac1	404d4d
+	403ac9	404d67	basicBlock: edges MD index (bottom up)
+		2	3	2
+		403ac9	404d67
+		403ad1	404d6c
+	403ae0	404d70	basicBlock: edges MD index (top down)
+		6	9	9
+		403ae0	404d70
+		403aea	404d88
+		403aed	404d8b
+		403af6	404d8f
+		403af9	404d94
+		403afe	404d99
+	403b04	404d9f	basicBlock: edges MD index (top down)
+		4	5	4
+		403b04	404d9f
+		403b0c	404da7
+		403b0f	404daa
+		403b13	404dae
+	403b15	404e10	basicBlock: edges MD index (top down)
+		1	28	2
+		403b15	404e10
+	403b81	404db0	basicBlock: propagation (size==1)
+		5	5	19
+		403b81	404db0
+		403b84	404db5
+		403b87	404db8
+		403b8a	404dd7
+		403b8f	404dda
+	403b92	406470	basicBlock: edges MD index (top down)
+		1	3	2
+		403b92	406470
+	403b9b	4051b7	basicBlock: edges prime product
+		2	2	2
+		403b9b	4051b7
+		403b9e	4051bc
+	403bc0	405024	basicBlock: relaxed MD index matching
+		0	5	1
+	403bd0	4051c2	basicBlock: edges prime product
+		4	4	4
+		403bd0	4051c2
+		403bd2	4051c6
+		403bd6	4051c9
+		403bd8	4051cd
+	403bdc	4052cb	basicBlock: edges MD index (bottom up)
+		5	12	6
+		403bed	4052cb
+		403bf8	4052cf
+		403bfd	4052d4
+		403c02	4052de
+		403c05	4052e1
+	403c07	4052e7	basicBlock: MD index matching (bottom up)
+		1	1	1
+		403c07	4052e7
+	403c10	4064ba	basicBlock: edges MD index (top down)
+		2	3	6
+		403c13	4064ca
+		403c16	4064cd
+	403c18	406490	basicBlock: edges MD index (top down)
+		4	5	9
+		403c18	406490
+		403c1b	406497
+		403c1e	4064a0
+		403c22	4064a6
+	403c26	4064ae	basicBlock: edges MD index (top down)
+		1	1	2
+		403c26	4064b1
+	403c28	4064b3	basicBlock: edges MD index (top down)
+		2	2	2
+		403c28	4064b3
+		403c2c	4064b8
+	403c2e	4064e0	basicBlock: edges MD index (top down)
+		2	4	30
+		403c2e	4064e8
+		403c36	4064ef
+	403c50	405227	basicBlock: prime matching (4 instructions minimum)
+		6	6	6
+		403c50	405227
+		403c55	40522a
+		403c58	40522f
+		403c5b	405232
+		403c5e	405235
+		403c61	405238
+	403c6d	4058d0	basicBlock: relaxed MD index matching
+		1	4	2
+		403c6d	4058d0
+	403c80	405046	basicBlock: edges Lengauer Tarjan dominated
+		1	2	3
+		403c85	405046
+	403c88	405400	basicBlock: edges MD index (top down)
+		0	2	5
+	403c91	405030	basicBlock: loop entry matching
+		4	5	6
+		403c91	405030
+		403c94	405033
+		403c97	405039
+		403c9b	40503c
+	403c9f	405044	basicBlock: edges MD index (top down)
+		0	1	1
+	403ca1	405060	basicBlock: edges MD index (top down)
+		1	2	2
+		403ca5	405065
+	403ca7	40507a	basicBlock: MD index matching (top down)
+		2	3	2
+		403cac	40507a
+		403caf	40507f
+	403cb1	405081	basicBlock: jump sequence matching
+		5	6	9
+		403cb1	405081
+		403cb4	405084
+		403cb7	405088
+		403cba	40508b
+		403cc2	4050a1
+	403cc4	405067	basicBlock: edges MD index (top down)
+		5	5	5
+		403cc4	405067
+		403cc8	40506a
+		403ccc	40506e
+		403cd0	405071
+		403cd4	405075
+	403cd6	4050a6	basicBlock: jump sequence matching
+		4	4	32
+		403cd6	4050af
+		403cda	4050b2
+		403cde	405139
+		403ce2	40513d
+	403ce6	405142	basicBlock: edges MD index (top down)
+		5	6	5
+		403ceb	405142
+		403cee	405146
+		403cf3	40514c
+		403cf6	405150
+		403cf9	405153
+	403cfb	405159	basicBlock: edges MD index (top down)
+		1	1	1
+		403cfb	405159
+	403cfd	405220	basicBlock: edges MD index (bottom up)
+		1	2	2
+		403d01	405225
+	403d03	40523d	basicBlock: prime matching (0 instructions minimum)
+		2	3	3
+		403d08	40523d
+		403d0b	405247
+	403d3e	406484	basicBlock: propagation (size==1)
+		1	6	2
+		403d3e	406484
+	403d57	40521b	basicBlock: edges MD index (top down)
+		1	1	1
+		403d57	40521b
+	403d7d	4066c4	basicBlock: edges MD index (bottom up)
+		5	13	7
+		403d7d	4066c4
+		403d82	4066c8
+		403d8e	4066cb
+		403d96	4066ce
+		403da4	4066d2
+	403daa	4066dc	basicBlock: propagation (size==1)
+		0	5	1
+	403dbb	4063d0	basicBlock: propagation (size==1)
+		1	9	2
+		403dcc	4063d0
+	403dd8	4063d6	basicBlock: edges MD index (top down)
+		3	6	6
+		403de1	4063da
+		403de4	4063dd
+		403de7	4063e3
+	403dec	4063ed	basicBlock: edges MD index (top down)
+		1	3	2
+		403df1	4063ed
+	403e0e	405675	basicBlock: edges MD index (top down)
+		1	3	10
+		403e11	405675
+	403e1c	4056a2	basicBlock: edges MD index (top down)
+		3	19	4
+		403e1f	4056a2
+		403e3c	4056a4
+		403e3f	4056a9
+	403e90	405160	basicBlock: loop entry matching
+		1	3	6
+		403e90	405160
+	403e9c	40654f	basicBlock: edges MD index (top down)
+		2	2	2
+		403e9c	40654f
+		403ea1	406552
+	403eb0	406560	basicBlock: edges MD index (top down)
+		6	6	8
+		403eb0	406560
+		403eb4	406564
+		403eb7	406567
+		403eba	40656d
+		403ebd	406573
+		403ebf	406575
+	403ec1	406577	basicBlock: edges MD index (top down)
+		1	2	7
+		403ec1	406588
+	403ec7	405350	basicBlock: relaxed MD index matching
+		2	3	2
+		403ecc	405350
+		403ecf	405355
+	403ef0	4051fb	basicBlock: edges MD index (top down)
+		0	5	1
+	403f20	405200	basicBlock: edges MD index (top down)
+		2	6	6
+		403f20	405200
+		403f25	405203
+	403f38	406590	basicBlock: edges Lengauer Tarjan dominated
+		3	6	3
+		403f38	406590
+		403f45	406594
+		403f4b	406599
+	403f51	40659f	basicBlock: propagation (size==1)
+		1	1	1
+		403f51	40659f
+	403f70	4051e7	basicBlock: loop entry matching
+		1	3	2
+		403f75	4051e7
+	403f7e	4066a1	basicBlock: edges MD index (top down)
+		2	2	2
+		403f7e	4066a1
+		403f81	4066a4
+	403f90	4066b0	basicBlock: edges MD index (top down)
+		6	6	7
+		403f90	4066b0
+		403f94	4066b4
+		403f97	4066b7
+		403f9a	4066bd
+		403f9d	4066c0
+		403f9f	4066c2
+	403fa1	4065fb	basicBlock: edges MD index (top down)
+		0	2	2
+	403fa7	406601	basicBlock: edges MD index (top down)
+		2	3	2
+		403fac	406601
+		403faf	406606
+	403fd0	4056f4	basicBlock: jump sequence matching
+		1	5	1
+		403fe2	4056f4
+	404000	405ee2	basicBlock: propagation (size==1)
+		1	5	3
+		40400c	405ee2
+	404015	4066e0	basicBlock: edges Lengauer Tarjan dominated
+		3	5	4
+		40401d	4066e0
+		404020	4066e4
+		404025	4066ee
+	40402b	405735	basicBlock: propagation (size==1)
+		1	8	8
+		40402b	405739
+4040c0	400930	0.012	0.029	0.39	0	0	0	function: call sequence matching(exact)	"med3"	".__stack_chk_fail"
+	1	6	1
+	4040c0	400930	basicBlock: entry point matching
+		0	16	1
+404120	406720	1	0.99	0.29	0.29	0	0	function: name hash matching	"__libc_csu_init"	"__libc_csu_init"
+	4	4	4
+	404120	406720	basicBlock: edges prime product
+		17	17	17
+		404120	406720
+		404122	406722
+		404124	406724
+		404127	406727
+		404129	406729
+		40412b	40672b
+		404132	406732
+		404133	406733
+		40413a	40673a
+		40413b	40673b
+		40413e	40673e
+		404141	406741
+		404144	406744
+		404148	406748
+		40414c	40674c
+		404151	406751
+		404154	406754
+	404156	406756	basicBlock: edges prime product
+		2	2	2
+		404156	406756
+		404158	406758
+	404160	406760	basicBlock: edges prime product
+		7	7	7
+		404160	406760
+		404163	406763
+		404166	406766
+		404169	406769
+		40416d	40676d
+		404171	406771
+		404174	406774
+	404176	406776	basicBlock: edges prime product
+		8	8	8
+		404176	406776
+		40417a	40677a
+		40417b	40677b
+		40417c	40677c
+		40417e	40677e
+		404180	406780
+		404182	406782
+		404184	406784
+404190	406790	1	0.97	0	0	0	0	function: name hash matching	"__libc_csu_fini"	"__libc_csu_fini"
+	1	1	1
+	404190	406790	basicBlock: MD index matching (top down)
+		1	1	1
+		404190	406790
+404194	406794	1	0.97	0	0	0	0	function: name hash matching	".term_proc"	".term_proc"
+	1	1	1
+	404194	406794	basicBlock: MD index matching (top down)
+		3	3	3
+		404194	406794
+		404198	406798
+		40419c	40679c
+6063c8	6083c8	1	0.99	0	0	1	1	function: name hash matching	"free@@GLIBC_2.2.5"	"free@@GLIBC_2.2.5"
+	0	0	0
+6063d0	6083d0	1	0.99	0	0	1	1	function: name hash matching	"putchar@@GLIBC_2.2.5"	"putchar@@GLIBC_2.2.5"
+	0	0	0
+6063d8	6083d8	1	0.99	0	0	1	1	function: name hash matching	"strcpy@@GLIBC_2.2.5"	"strcpy@@GLIBC_2.2.5"
+	0	0	0
+6063e0	6083e0	1	0.99	0	0	1	1	function: name hash matching	"puts@@GLIBC_2.2.5"	"puts@@GLIBC_2.2.5"
+	0	0	0
+6063e8	6083e8	1	0.99	0	0	1	1	function: name hash matching	"fclose@@GLIBC_2.2.5"	"fclose@@GLIBC_2.2.5"
+	0	0	0
+6063f0	6083f8	1	0.99	0	0	1	1	function: name hash matching	"printf@@GLIBC_2.2.5"	"printf@@GLIBC_2.2.5"
+	0	0	0
+6063f8	608400	1	0.99	0	0	1	1	function: name hash matching	"memset@@GLIBC_2.2.5"	"memset@@GLIBC_2.2.5"
+	0	0	0
+606400	608408	1	0.99	0	0	1	1	function: name hash matching	"__libc_start_main@@GLIBC_2.2.5"	"__libc_start_main@@GLIBC_2.2.5"
+	0	0	0
+606408	608410	1	0.99	0	0	1	1	function: name hash matching	"fgets@@GLIBC_2.2.5"	"fgets@@GLIBC_2.2.5"
+	0	0	0
+606410	608418	1	0.99	0	0	1	1	function: name hash matching	"calloc@@GLIBC_2.2.5"	"calloc@@GLIBC_2.2.5"
+	0	0	0
+606418	608420	1	0.99	0	0	1	1	function: name hash matching	"fprintf@@GLIBC_2.2.5"	"fprintf@@GLIBC_2.2.5"
+	0	0	0
+606420	608430	1	0.99	0	0	1	1	function: name hash matching	"malloc@@GLIBC_2.2.5"	"malloc@@GLIBC_2.2.5"
+	0	0	0
+606428	608438	1	0.99	0	0	1	1	function: name hash matching	"fflush@@GLIBC_2.2.5"	"fflush@@GLIBC_2.2.5"
+	0	0	0
+606430	608440	1	0.99	0	0	1	1	function: name hash matching	"__isoc99_sscanf@@GLIBC_2.7"	"__isoc99_sscanf@@GLIBC_2.7"
+	0	0	0
+606438	608448	1	0.99	0	0	1	1	function: name hash matching	"realloc@@GLIBC_2.2.5"	"realloc@@GLIBC_2.2.5"
+	0	0	0
+606440	608450	1	0.99	0	0	1	1	function: name hash matching	"fopen@@GLIBC_2.2.5"	"fopen@@GLIBC_2.2.5"
+	0	0	0
+606450	608458	1	0.99	0	0	1	1	function: name hash matching	"sprintf@@GLIBC_2.2.5"	"sprintf@@GLIBC_2.2.5"
+	0	0	0
+606458	608460	1	0.99	0	0	1	1	function: name hash matching	"exit@@GLIBC_2.2.5"	"exit@@GLIBC_2.2.5"
+	0	0	0
+606460	608468	1	0.99	0	0	1	1	function: name hash matching	"fwrite@@GLIBC_2.2.5"	"fwrite@@GLIBC_2.2.5"
+	0	0	0
+606468	608470	1	0.99	0	0	1	1	function: name hash matching	"free"	"free"
+	0	0	0
+606470	608478	1	0.99	0	0	1	1	function: name hash matching	"putchar"	"putchar"
+	0	0	0
+606478	608480	1	0.99	0	0	1	1	function: name hash matching	"strcpy"	"strcpy"
+	0	0	0
+606480	608488	1	0.99	0	0	1	1	function: name hash matching	"puts"	"puts"
+	0	0	0
+606488	608490	1	0.99	0	0	1	1	function: name hash matching	"fclose"	"fclose"
+	0	0	0
+606490	6084a0	1	0.99	0	0	1	1	function: name hash matching	"printf"	"printf"
+	0	0	0
+606498	6084a8	1	0.99	0	0	1	1	function: name hash matching	"memset"	"memset"
+	0	0	0
+6064a0	6084b0	1	0.99	0	0	1	1	function: name hash matching	"__libc_start_main"	"__libc_start_main"
+	0	0	0
+6064a8	6084b8	1	0.99	0	0	1	1	function: name hash matching	"fgets"	"fgets"
+	0	0	0
+6064b0	6084c0	1	0.99	0	0	1	1	function: name hash matching	"calloc"	"calloc"
+	0	0	0
+6064b8	6084c8	1	0.99	0	0	1	1	function: name hash matching	"fprintf"	"fprintf"
+	0	0	0
+6064c0	6084d8	1	0.99	0	0	1	1	function: name hash matching	"malloc"	"malloc"
+	0	0	0
+6064c8	6084e0	1	0.99	0	0	1	1	function: name hash matching	"fflush"	"fflush"
+	0	0	0
+6064d0	6084e8	1	0.99	0	0	1	1	function: name hash matching	"__isoc99_sscanf"	"__isoc99_sscanf"
+	0	0	0
+6064d8	6084f0	1	0.99	0	0	1	1	function: name hash matching	"realloc"	"realloc"
+	0	0	0
+6064e0	6084f8	1	0.99	0	0	1	1	function: name hash matching	"fopen"	"fopen"
+	0	0	0
+6064f0	608500	1	0.99	0	0	1	1	function: name hash matching	"sprintf"	"sprintf"
+	0	0	0
+6064f8	608508	1	0.99	0	0	1	1	function: name hash matching	"exit"	"exit"
+	0	0	0
+606500	608510	1	0.99	0	0	1	1	function: name hash matching	"fwrite"	"fwrite"
+	0	0	0
+ --------- unmatched primary (34) ------------ 
+400ab0	0	0.5	global_opt
+400d00	0	0.45	refresh_neighbour_lists
+400ec0	0	0	start
+400ed0	0	0.28	getArcPosition
+400f10	0	0	getOriginalArcPosition
+400f20	0	0.83	flow_org_cost
+401060	0	0.64	primal_feasible
+401160	0	0.58	dual_feasible
+401210	0	0.49	getfree
+401280	0	0.95	read_min
+401960	0	0.63	refreshArcPointers
+401a30	0	0.38	refreshPositions
+401b00	0	0.7	marc_arcs
+401de0	0	0.35	insert_new_arc
+401eb0	0	0.48	replace_weaker_arc
+401fc0	0	0.38	calculate_max_redcost
+402140	0	1.6	price_out_impl
+4028f0	0	1	suspend_impl
+402b70	0	0.53	primal_start_artificial
+402ca0	0	0.68	write_circulations
+402e00	0	0.28	write_objective_value
+402e50	0	1.1	update_tree
+403050	0	0.92	primal_iminus
+403110	0	0.32	primal_update_flow
+403160	0	0.55	markBaskets
+403250	0	0.52	worker
+403380	0	0.87	master
+403690	0	0	primal_net_simplex
+403760	0	0	set_static_vars
+403780	0	0.29	bea_is_dual_infeasible
+4037f0	0	1	primal_bea_mpp
+404040	0	0.59	swapfunc
+606448	1	0	atoi@@GLIBC_2.2.5
+6064e8	1	0	atoi
+ --------- unmatched secondary (5) ------------ 
+400a40	0	0	set_fast_math
+6083f0	1	0	__stack_chk_fail@@GLIBC_2.4
+608428	1	0	strtol@@GLIBC_2.2.5
+608498	1	0	__stack_chk_fail
+6084d0	1	0	strtol
