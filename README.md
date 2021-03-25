@@ -62,7 +62,7 @@ Setting for Genetic Algorithm
 --------------------
 The genetic algorithm is a metaheuristic inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms. Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying on biologically inspired operators such as mutation, crossover, and selection.
 
-We tune four parameters for the genetic algorithm, including mutation_rate,  crossover_rate, must_mutate_count, crossover_strength.  
+We tune four parameters for the genetic algorithm, including *mutation_rate,  crossover_rate, must_mutate_count, crossover_strength*.  
 
 For more details, please refer [globalGA](https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py) .
 
