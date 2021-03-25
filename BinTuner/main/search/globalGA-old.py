@@ -8,10 +8,10 @@ from opentuner.search import technique
 class GlobalEvolutionaryTechnique(SearchTechnique):
   countNumber = 0
   def __init__(self,
-               mutation_rate = 0.1,
-               crossover_rate = 0.0,
+               mutation_rate = 0.3,
+               crossover_rate = 0.2,
                must_mutate_count = 1,
-	             crossover_strength = 0.1,
+	             crossover_strength = 0.2,
                *pargs, **kwargs):
     super(GlobalEvolutionaryTechnique, self).__init__(*pargs, **kwargs)
     self.mutation_rate = mutation_rate
