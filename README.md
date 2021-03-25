@@ -51,6 +51,25 @@ Benchmarks and Malicious Samples:
 
 Mirai, LightAidra, BASHLIFE
 
+First-order formulas
+--------------------
+
+We manually generate first-order formulas after understanding the compiler manual. The knowledge we learned is easy to move between the same compiler series---we only need to consider the different optimization options introduced by the new version. 
+We use Z3 Prover to analyze all generated optimization option sequences for conflicts and make changes to conflicting options for greater success in compiling.
+For more details, please refer Z3Prover.py file in https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/Z3Prover.py
+
+Setting for Genetic Algorithm
+--------------------
+The genetic algorithm is a metaheuristic inspired by the process of natural selection that belongs to the larger class of evolutionary algorithms. Genetic algorithms are commonly used to generate high-quality solutions to optimization and search problems by relying on biologically inspired operators such as mutation, crossover, and selection.
+
+We tune four parameters for the genetic algorithm, including mutation_rate,  crossover_rate, must_mutate_count, crossover_strength.  
+
+For more details, please refer globalGA-old.py file in https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py
+
+(mutation_rate = 0.3, crossover_rate = 0.2, must_mutate_count = 1, crossover_strength = 0.2）
+
+These values refer to the tuning of a large number of experiments.
+
 Future Work
 --------------------
 We are studying constructing custom optimization sequences that present the best tradeoffs between multiple objective functions (e.g., execution speed & NCD). To further reduce the total iterations of BinTuner, an exciting direction is to develop machine learning methods that correlate C language features with particular optimization options. In this way, we can predict program-specific optimization strategies that achieve the expected binary code differences.
