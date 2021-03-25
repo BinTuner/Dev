@@ -64,7 +64,7 @@ The genetic algorithm is a metaheuristic inspired by the process of natural sele
 
 We tune four parameters for the genetic algorithm, including mutation_rate,  crossover_rate, must_mutate_count, crossover_strength.  
 
-For more details, please refer globalGA-old.py file in https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py
+For more details, please refer [globalGA.py](https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py) file.
 
 Future Work
 --------------------
