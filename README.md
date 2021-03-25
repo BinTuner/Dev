@@ -66,10 +66,6 @@ We tune four parameters for the genetic algorithm, including mutation_rate,  cro
 
 For more details, please refer globalGA-old.py file in https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py
 
-(mutation_rate = 0.3, crossover_rate = 0.2, must_mutate_count = 1, crossover_strength = 0.2）
-
-These values refer to the tuning result of a large number of experiments.
-
 Future Work
 --------------------
 We are studying constructing custom optimization sequences that present the best tradeoffs between multiple objective functions (e.g., execution speed & NCD). To further reduce the total iterations of BinTuner, an exciting direction is to develop machine learning methods that correlate C language features with particular optimization options. In this way, we can predict program-specific optimization strategies that achieve the expected binary code differences.
