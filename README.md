@@ -68,7 +68,7 @@ For more details, please refer globalGA-old.py file in https://github.com/BinTun
 
 (mutation_rate = 0.3, crossover_rate = 0.2, must_mutate_count = 1, crossover_strength = 0.2）
 
-These values refer to the tuning of a large number of experiments.
+These values refer to the tuning result of a large number of experiments.
 
 Future Work
 --------------------
