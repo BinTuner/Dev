@@ -55,7 +55,9 @@ First-order formulas
 --------------------
 
 We manually generate first-order formulas after understanding the compiler manual. The knowledge we learned is easy to move between the same compiler series---we only need to consider the different optimization options introduced by the new version. 
-We use Z3 Prover to analyze all generated optimization option sequences for conflicts and make changes to conflicting options for greater success in compiling.
+
+We use Z3 Prover to analyze all generated optimization option sequences for conflicts and make changes to conflicting options for greater compiling success.
+
 For more details, please refer  [Z3Prover](https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/Z3Prover.py).
 
 Setting for Genetic Algorithm
