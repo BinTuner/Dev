@@ -95,7 +95,6 @@ class GlobalEvolutionaryTechnique(SearchTechnique):
             cfg[flag] = 'off'
          if flag == 'inline-small-functions' and cfg[flag] == 'default':
             cfg[flag] = 'off'
-         #--7.0 new rule interface
          if flag == 'shrink-wrap-separate' and cfg[flag] == 'default':  
             cfg[flag] = 'on'
          if flag == 'ipa-bit-cp' and cfg[flag] == 'default':
