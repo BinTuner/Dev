@@ -23,7 +23,7 @@ A list of system dependencies can be found in [packages-deps](https://github.com
 
 On Ubuntu/Debian there can be installed with:
 ```
-sudo apt-get install `cat debian-packages-deps | tr '\n' ' '`
+sudo apt-get install `cat packages-deps | tr '\n' ' '`
 ```
 Installation
 --------------------
