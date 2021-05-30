@@ -46,6 +46,9 @@ Please try again or install each manually
 
 ```
 pip install fn>=0.2.12
+...
+pip install numpy>=1.8.0
+...
 ```
 First-order formulas
 --------------------
