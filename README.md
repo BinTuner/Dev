@@ -34,38 +34,6 @@ sudo apt-get install python-pip
 sudo pip install -r requirements.txt
 ```
 
-System Prerequisites
---------------------
-
-Operating System: Ubuntu 20.04 LTS,
-
-Compilers: GCC 10.2, LLVM 11.0,
-
-Z3 Theorem Prover,
-
-Some Third-party Libraries and Others:
-
-1. IDA Pro 
-2. Diaphora (a diffing plugin for IDA)
-3. BinExport (an exporter component of BinDiff as well as BinNavi)
-4. Python 2.7
-5. argparse >= 1.2.1
-6. fn >= 0.2.12
-7. numpy >= 1.8.0
-8. pysqlite >= 2.6.3
-9. SQLAlchemy >= 0.8.2
-10. BinHunt
-11. Scan-build/intercept-build
-
-https://pypi.org/project/scan-build/
-
-https://clang.llvm.org/docs/JSONCompilationDatabase.html
-
-Benchmarks and Malicious Samples:
-
-(SPECint 2006 and SPECspeed 2017, Coreutils, and OpenSSL) benchmarks
-
-Mirai, LightAidra, BASHLIFE
 
 First-order formulas
 --------------------
