@@ -22,9 +22,9 @@ System dependencies
 A list of system dependencies can be found in [packages-deps](https://github.com/BinTuner/Dev/blob/main/packages-deps) which are primarily python 2.6+ (not 3.x) and sqlite3.
 
 On Ubuntu/Debian there can be installed with:
-      ````
+      ```
 sudo apt-get install `cat debian-packages-deps | tr '\n' ' '`
-      ````
+      ```
 Installation
 --------------------
 
