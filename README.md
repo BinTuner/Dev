@@ -16,6 +16,22 @@ The client-side runs different compilers (GCC, LLVM ...) and the calculation of 
 
 Both sides communicate valid optimization options, fitness function scores, and compiled binaries to each other, and these data are stored in a database for future exploration. When BinTuner reaches a termination condition, we select the iterations showing the highest fitness function score and output the corresponding binary code as the final outcomes.
 
+System dependencies
+--------------------
+
+A list of system dependencies can be found in [packages-deps](https://github.com/BinTuner/Dev/blob/main/packages-deps) which are primarily python 2.6+ (not 3.x) and sqlite3.
+
+On Ubuntu/Debian there can be installed with:
+      
+sudo apt-get install `cat debian-packages-deps | tr '\n' ' '`
+      
+Installation
+--------------------
+
+For development (running OpenTuner out of a git checkout), a list of python dependencies can be found in requirements.txt these can be installed system-wide with pip.
+
+sudo apt-get install python-pip
+sudo pip install -r requirements.txt
 
 
 System Prerequisites
