@@ -22,17 +22,17 @@ System dependencies
 A list of system dependencies can be found in [packages-deps](https://github.com/BinTuner/Dev/blob/main/packages-deps) which are primarily python 2.6+ (not 3.x) and sqlite3.
 
 On Ubuntu/Debian there can be installed with:
-      ```
+```
 sudo apt-get install `cat debian-packages-deps | tr '\n' ' '`
-      ```
+```
 Installation
 --------------------
 
 For development (running OpenTuner out of a git checkout), a list of python dependencies can be found in requirements.txt these can be installed system-wide with pip.
-
+```
 sudo apt-get install python-pip
 sudo pip install -r requirements.txt
-
+```
 
 System Prerequisites
 --------------------
