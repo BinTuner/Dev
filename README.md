@@ -28,7 +28,7 @@ sudo apt-get install `cat packages-deps | tr '\n' ' '`
 Installation
 --------------------
 
-For development (running OpenTuner out of a git checkout), a list of python dependencies can be found in requirements.txt these can be installed system-wide with pip.
+running it out of a git checkout, a list of python dependencies can be found in requirements.txt these can be installed system-wide with pip.
 ```
 sudo apt-get install python-pip
 sudo pip install -r requirements.txt
