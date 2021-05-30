@@ -36,13 +36,13 @@ sudo apt-get install python-pip
 sudo pip install -r requirements.txt
 ```
 
-if you encounter an error message like this:
+If you encounter an error message like this:
 
 ```
 Could not find a version that satisfies the requirement fn>=0.2.12 (from -r requirements.txt (line 2)) (from versions:)
 No matching distribution found for fn>=0.2.12 (from -r requirements.tet (line 2))
 ```
-please try again or install each manually
+Please try again or install each manually
 
 ```
 pip install fn>=0.2.12
