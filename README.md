@@ -62,11 +62,10 @@ Please install lzma
 sudo apt-get install python-lzma
 ```
 
-[//]: <> (This is also a comment.)
-;   Checking Installation
-; --------------------
-; Paper
-; --------------------
+[//]: <> (Checking Installation)
+
+
+[//]: <> (Paper)
 
 
 
