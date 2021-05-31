@@ -62,12 +62,12 @@ Please install lzma
 sudo apt-get install python-lzma
 ```
 
-[^_^]:
+[//]: <> (This is also a comment.)
 ;   Checking Installation
 ; --------------------
 ; Paper
 ; --------------------
-(`>>`).
+
 
 
 First-order formulas
