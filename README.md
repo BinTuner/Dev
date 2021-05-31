@@ -50,6 +50,27 @@ pip install fn>=0.2.12
 pip install numpy>=1.8.0
 ...
 ```
+
+
+If you encounter an error message like this:
+
+```
+ImportError: No module named lzma
+```
+Please install lzma
+```
+sudo apt-get install python-lzma
+```
+
+[^_^]:
+Checking Installation
+--------------------
+[//]: # 
+Paper
+--------------------
+
+
+
 First-order formulas
 --------------------
 
