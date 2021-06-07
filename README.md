@@ -145,8 +145,6 @@ eg@xx:~/Documents/opentuner-master/examples/gccflags$ python bzip2_gcc.py 10
 You will see some info like this:
 ```
 Program Start
-['GGA']
-beformutation
 ************************ Z3 ************************
 5- Result--> Unavailable
 3- Result--> Available
