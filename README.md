@@ -60,7 +60,7 @@ Please install lzma
 ```
 sudo apt-get install python-lzma
 ```
-
+If you encounter an error message like this:
 ```
 assert compile_result['returncode'] == 0
 AssertionError
