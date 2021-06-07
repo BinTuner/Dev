@@ -92,7 +92,11 @@ The following options control optimizations:
 
 ```
 
-Check how to install LLVM here https://apt.llvm.org/    https://clang.llvm.org/get_started.html
+Check how to install LLVM here 
+
+https://apt.llvm.org/    
+
+https://clang.llvm.org/get_started.html
 
 
 
