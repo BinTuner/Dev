@@ -104,6 +104,11 @@ The following options control optimizations:
 
 ```
 
+```
+clang -v
+```
+
+
 Check how to install LLVM here 
 
 https://apt.llvm.org/    
