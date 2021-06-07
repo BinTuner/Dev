@@ -51,6 +51,18 @@ pip install numpy>=1.8.0
 ...
 ```
 
+If you encounter an error message like this:
+
+```
+ImportError: No module named lzma
+```
+Please install lzma
+```
+sudo apt-get install python-lzma
+```
+
+
+
 Install GCC & LLVM
 --------------------
 Check to see if the compiler is installed
@@ -104,15 +116,7 @@ https://clang.llvm.org/get_started.html
 
 
 
-If you encounter an error message like this:
 
-```
-ImportError: No module named lzma
-```
-Please install lzma
-```
-sudo apt-get install python-lzma
-```
 
 [//]: <> (Checking Installation)
 
