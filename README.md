@@ -63,8 +63,10 @@ sudo apt-get install python-lzma
 
 
 
-Install GCC & LLVM
+Install Compiler
 --------------------
+GCC
+
 Check to see if the compiler is installed
 
 e.g. 
@@ -103,6 +105,7 @@ The following options control optimizations:
   ...
 
 ```
+LLVM
 
 ```
 clang -v
