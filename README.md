@@ -153,7 +153,7 @@ Program Start
 ...
 -------------------------------------------------
 
---- BinTuner ---:
+--- BinTuner ---
 --- CMD---:
 gcc benchmarks/bzip2.c -lm -o ./tmp0.bin -O3 -fauto-inc-dec -fbranch-count-reg -fno-combine-stack-adjustments 
 -fcompare-elim -fcprop-registers -fno-dce -fdefer-pop -fdelayed-branch -fno-dse -fforward-propagate -fguess-branch-probability 
