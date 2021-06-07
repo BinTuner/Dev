@@ -3,3 +3,4 @@ fn>=0.2.12
 future
 numpy>=1.8.0
 SQLAlchemy>=0.8.2
+z3-solver
