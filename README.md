@@ -51,6 +51,46 @@ pip install numpy>=1.8.0
 ...
 ```
 
+Install GCC & LLVM
+--------------------
+Check to see if the compiler is installed
+
+e.g. 
+gcc -v  shows that
+gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)
+
+Please note that there have different optimization options in different versions of compilers. 
+If you use the optimization options that are not included in this version of the compiler, the program can not run and report an error.
+
+It is strongly recommended to confirm that the optimization options are in the official instructions of GCC or LLVM before using them.
+e.g.
+[GCC version 10.2.0] (https://gcc.gnu.org/onlinedocs/gcc-10.2.0/gcc/Optimize-Options.html#Optimize-Options)
+
+You can also use the command to display all options in terminal
+```
+gcc --help=optimizers
+
+
+The following options control optimizations:
+  -O<number>                  Set optimization level to <number>.
+  -Ofast                      Optimize for speed disregarding exact standards
+                              compliance.
+  -Og                         Optimize for debugging experience rather than
+                              speed or size.
+  -Os                         Optimize for space rather than speed.
+  -faggressive-loop-optimizations Aggressively optimize loops using language
+                              constraints.
+  -falign-functions           Align the start of functions.
+  -falign-jumps               Align labels which are only reached by jumping.
+  -falign-labels              Align all labels.
+  -falign-loops               Align the start of loops.
+  ...
+
+```
+
+
+
+
 
 If you encounter an error message like this:
 
