@@ -7,3 +7,4 @@ libsqlite3-dev
 python-dev
 python-pip
 sqlite3
+python-lzma
