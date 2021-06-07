@@ -61,6 +61,12 @@ Please install lzma
 sudo apt-get install python-lzma
 ```
 
+```
+assert compile_result['returncode'] == 0
+AssertionError
+```
+Please confirm how to use the compiler in your terminal, such as GCC or gcc-10.2.0
+it needs to be modified in your .Py file
 
 
 Install Compiler
