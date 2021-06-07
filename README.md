@@ -133,7 +133,39 @@ https://apt.llvm.org/
 https://clang.llvm.org/get_started.html
 
 
+Checking Installation
+--------------------
 
+Enter the following command in terminal to test:
+```
+eg@xx:~/Documents/opentuner-master/examples/gccflags$ python bzip2_gcc.py 10
+
+```
+
+You will see some info like this:
+```
+Program Start
+['GGA']
+beformutation
+************************ Z3 ************************
+5- Result--> Unavailable
+3- Result--> Available
+[ Z3 return Results = first second True four False]
+[ Changed "shrink-wrap" value ]
+...
+-------------------------------------------------
+
+--- BinTuner ---:
+--- CMD---:
+gcc-7 benchmarks/bzip2.c -lm -o ./tmp0.bin -O3 -fauto-inc-dec -fbranch-count-reg -fno-combine-stack-adjustments -fcompare-elim -fcprop-registers -fno-dce -fdefer-pop -fdelayed-branch -fno-dse -fforward-propagate -fguess-branch-probability -fno-if-conversion2 -fno-if-conversion -finline-functions-called-once -fipa-pure-const -fno-ipa-profile -fipa-reference -fno-merge-constants -fmove-loop-invariants -freorder-blocks -fshrink-wrap -fsplit-wide-types -fno-tree-bit-ccp -fno-tree-ccp -ftree-ch -fno-tree-coalesce-vars -ftree-copy-prop -ftree-dce -fno-tree-dse -ftree-forwprop -fno-tree-fre -ftree-sink -fno-tree-slsr -fno-tree-sra -ftree-pta -ftree-ter -fno-unit-at-a-time -fno-omit-frame-pointer -ftree-phiprop -fno-tree-dominator-opts -fno-ssa-backprop -fno-ssa-phiopt -fshrink-wrap-separate -fthread-jumps -falign-functions -fno-align-labels -fno-align-labels -falign-loops -fno-caller-saves -fno-crossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fno-delete-null-pointer-checks -fno-devirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fno-gcse -fno-gcse-lm -fno-hoist-adjacent-loads -finline-small-functions -fno-indirect-inlining -fipa-cp -fipa-sra -fipa-icf -fno-isolate-erroneous-paths-dereference -fno-lra-remat -foptimize-sibling-calls -foptimize-strlen -fpartial-inlining -fno-peephole2 -fno-reorder-blocks-and-partition -fno-reorder-functions -frerun-cse-after-loop -fno-sched-interblock -fno-sched-spec -fno-schedule-insns -fno-strict-aliasing -fstrict-overflow -fno-tree-builtin-call-dce -fno-tree-switch-conversion -ftree-tail-merge -ftree-pre -fno-tree-vrp -fno-ipa-ra -freorder-blocks -fno-schedule-insns2 -fcode-hoisting -fstore-merging -freorder-blocks-algorithm=simple -fipa-bit-cp -fipa-vrp -fno-inline-functions -fno-unswitch-loops -fpredictive-commoning -fno-gcse-after-reload -fno-tree-loop-vectorize -ftree-loop-distribute-patterns -fno-tree-slp-vectorize -fvect-cost-model -ftree-partial-pre -fpeel-loops -fipa-cp-clone -fno-split-paths -ftree-vectorize --param early-inlining-insns=526 --param gcse-cost-distance-ratio=12 --param iv-max-considered-uses=762
+ -O3
+--NCD:0.807842390787
+---Test----
+--Max:0
+--Current:0
+--Count:0
+...
+```
 
 
 
