@@ -69,6 +69,14 @@ Please confirm how to use the compiler in your terminal, such as GCC or gcc-10.2
 it needs to be modified in your .Py file
 
 
+If you encounter an error message like this:
+```
+sqlalchemy.exc.OperationalError: (pysqlite2.dbapi2.OperationalError) database is locked [SQL: u'INSERT INTO tuning_run (uuid, program_version_id, machine_class_id, input_class_id, name, args, objective, state, start_date, end_date, final_config_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'] [parameters: ('b3311f3609ff4ce9aa40c0f9bb291d26', 1, None, None, 'unnamed', <read-only buffer for 0x556266495ab0, size -1, offset 0 at 0x7fcca77b67b0>, <read-only buffer for 0x7fcca781b420, size -1, offset 0 at 0x7fcca77b6570>, 'QUEUED', '2021-xx-xx 03:42:04.145932', None, None)] (Background on this error at: http://sqlalche.me/e/e3q8)
+```
+Just delete the DB file saved before (PATH:/examples/gccflags/opentuner.db/Your PC's Name.db).
+
+
+
 Install Compiler
 --------------------
 GCC
