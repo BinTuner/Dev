@@ -1,0 +1,5 @@
+[2021-06-07 21:19:35,370]   ERROR opentuner.measurement.interface: error killing process 7005 @interface.py:349
+Traceback (most recent call last):
+  File "/home/xiaolei/Documents/opentuner-master/opentuner/measurement/interface.py", line 345, in goodkillpg
+    os.killpg(pid, signal.SIGKILL)
+OSError: [Errno 3] No such process
