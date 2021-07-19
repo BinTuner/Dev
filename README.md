@@ -1,7 +1,7 @@
 BinTuner
 ---------------------
 BinTuner is a cost-efficient auto-tuning framework, which can deliver a near-optimal binary code that reveals much more differences than -Ox settings. it also can assist the binary code analysis research in generating more diversified datasets for training and testing.
-The BinTuner framework is based on opentuner, thanks to all contributors for their contributions.
+The BinTuner framework is based on OpenTuner, thanks to all contributors for their contributions.
 
 The architecture of BinTuner:
 ---------------------
