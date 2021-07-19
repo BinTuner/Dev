@@ -1,5 +1,0 @@
-argparse
-django
-fn
-SQLAlchemy
-virtualenv
