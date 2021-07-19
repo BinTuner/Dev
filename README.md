@@ -137,8 +137,7 @@ Checking Installation
 
 Enter the following command in terminal to test:
 ```
-eg@xx:~/Documents/opentuner-master/examples/gccflags$ python main.py 2
-
+eg@xx:~/BinTuner/examples/gccflags$ python main.py 2
 ```
 
 You will see some info like this:
