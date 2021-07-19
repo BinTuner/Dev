@@ -137,7 +137,7 @@ Checking Installation
 
 Enter the following command in terminal to test:
 ```
-eg@xx:~/Documents/opentuner-master/examples/gccflags$ python bzip2_gcc.py 10
+eg@xx:~/Documents/opentuner-master/examples/gccflags$ python main.py 2
 
 ```
 
@@ -199,7 +199,7 @@ We manually generate first-order formulas after understanding the compiler manua
 
 We use Z3 Prover to analyze all generated optimization option sequences for conflicts and make changes to conflicting options for greater compiling success.
 
-For more details, please refer  [Z3Prover](https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/Z3Prover.py).
+For more details, please refer  [Z3Prover](https://github.com/BinTuner/Dev/BinTuner/opentuner/search/Z3Prover.py).
 
 Setting for Genetic Algorithm
 --------------------
@@ -207,7 +207,7 @@ The genetic algorithm is a metaheuristic inspired by the process of natural sele
 
 We tune four parameters for the genetic algorithm, including `mutation_rate`,  `crossover_rate`, `must_mutate_count`, `crossover_strength`.  
 
-For more details, please refer [globalGA](https://github.com/BinTuner/Dev/blob/main/BinTuner/main/search/globalGA-old.py).
+For more details, please refer [globalGA](https://github.com/BinTuner/Dev/BinTuner/opentuner/search/globalGA.py).
 
 Future Work
 --------------------
