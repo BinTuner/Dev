@@ -190,10 +190,11 @@ gcc benchmarks/bzip2.c -lm -o ./tmp0.bin -O3 -fauto-inc-dec -fbranch-count-reg -
 [//]: <> (Paper)
 
 
-Results:
+Results
 ----------
 
 The DB file saved in the PATH:/examples/gccflags/opentuner.db/Your PC's Name.db
+Each sequence of compilation flags and the corresponding ncd value are saved in the db file. 
 
 Set up how many times to run
 ----------
