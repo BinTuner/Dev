@@ -195,6 +195,13 @@ Results:
 
 The DB file saved in the PATH:/examples/gccflags/opentuner.db/Your PC's Name.db
 
+Set up how many times to run
+----------
+Please refer to the settings in main.py
+There are two strategies
+The default setting runs 100 times, if you want to modify it according to your own wishes this is ok.
+For example, by monitoring the change of NCD value in 100 times, if the cumulative change of 100 times increase is less than 5%, let's terminte it.
+
 First-order formulas
 --------------------
 
