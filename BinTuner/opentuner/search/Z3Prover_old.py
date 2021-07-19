@@ -1,4 +1,4 @@
-# Copyright (c) Xiaolei Ren 2017
+
 
 from z3 import *
 
