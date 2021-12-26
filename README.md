@@ -74,8 +74,9 @@ sqlalchemy.exc.OperationalError: (pysqlite2.dbapi2.OperationalError) database is
 ```
 Just delete the DB file saved before (PATH:/examples/gccflags/opentuner.db/Your PC's Name.db).
 
-If you encounter an error message of z3-solver
-I am using z3-solver 4.8.14.0 (pip install z3-solver), just try to use this version and let me know which version of z3-solver you are reporting so that I can go find out what the problem is.
+z3-solver
+
+I am using z3-solver 4.8.14.0 (pip install z3-solver), it works well.
 
 Install Compiler
 --------------------
