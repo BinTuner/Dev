@@ -1,0 +1,3 @@
+django
+matplotlib
+virtualenv
