@@ -325,7 +325,8 @@ def weighted_choice(choices):
 
 def all_techniques():
   #import all modules in search to ensure techniques are Registered
-  for f in sorted(os.listdir(os.path.dirname(__file__))):
+  a = ['Z3Prover.py', 'Z3Prover.pyc', 'Z3Prover_old.py', 'Z3Prover_old.pyc', '__init__.py', '__init__.pyc', 'bandittechniques.py', 'bandittechniques.pyc', 'composableevolutionarytechniques.py', 'composableevolutionarytechniques.pyc', 'differentialevolution.py', 'differentialevolution.pyc', 'driver.py', 'driver.pyc', 'evolutionarytechniques.py', 'evolutionarytechniques.pyc', 'globalGA-old.py', 'globalGA-old.pyc', 'globalGA.py', 'globalGA.pyc', 'manipulator.py', 'manipulator.pyc', 'metatechniques.py', 'metatechniques.pyc', 'objective.py', 'objective.pyc', 'patternsearch.py', 'patternsearch.pyc', 'plugin.py', 'plugin.pyc', 'pso.py', 'pso.pyc', 'simplextechniques.py', 'simplextechniques.pyc', 'simulatedannealing.py', 'simulatedannealing.pyc', 'technique.py', 'technique.pyc']
+  for f in sorted(a):
     m = re.match(r'^(.*)[.]py$', f)
     if m:
       import_module('opentuner.search.'+m.group(1))
