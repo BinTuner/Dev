@@ -42,7 +42,7 @@ class GlobalEvolutionaryTechnique(SearchTechnique):
       #print '--------------------'
     else:
       cfg = parents[0]
-    print "beformutation"
+    #print "beformutation"
     for z in xrange(10): #retries
       # while (true)  ------------------------for z3
       self.mutation(cfg)  # The final step to generate cfg
