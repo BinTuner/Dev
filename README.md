@@ -225,7 +225,7 @@ For more details, please refer [globalGA](https://github.com/BinTuner/Dev/blob/m
 
 Future Work
 --------------------
-We are studying constructing custom optimization sequences that present the best tradeoffs between multiple objective functions (e.g., execution speed & NCD). To further reduce the total iterations of BinTuner, an exciting direction is to develop machine learning methods that correlate C language features with particular optimization options. In this way, we can predict program-specific optimization strategies that achieve the expected binary code differences.
+We are studying constructing custom optimization sequences that present the best tradeoffs between multiple objective functions (e.g., execution speed, energy consumption, and obfuscation). To further reduce the total iterations of BinTuner, an exciting direction is to develop machine learning methods that correlate C language features with particular optimization options. In this way, we can predict program-specific optimization strategies that achieve the expected binary code differences.
 
 
 
