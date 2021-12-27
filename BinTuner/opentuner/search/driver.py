@@ -19,7 +19,7 @@ from opentuner.search.bandittechniques import AUCBanditMetaTechnique
 log = logging.getLogger(__name__)
 
 argparser = argparse.ArgumentParser(add_help=False)
-argparser.add_argument('--test-limit', type=int, default=2600, #Michael 5000
+argparser.add_argument('--test-limit', type=int, default=100, 
                        help='stop tuning after given tests count')
 argparser.add_argument('--stop-after', type=float,
                        help='stop tuning after given seconds')
@@ -55,8 +55,8 @@ class SearchDriver(DriverBase):
 
     self.generation = 0
     self.test_count = 0
-    self.plugins = plugin.get_enabled(self.args)  #Michael before print
-    self.pending_result_callbacks = list()  # (DesiredResult, function) tuples
+    self.plugins = plugin.get_enabled(self.args)  
+    self.pending_result_callbacks = list()  
     # deepcopy is required to have multiple tuning runs in a single process
     if self.args.list_techniques:
       techniques, generators = technique.all_techniques()
@@ -149,7 +149,7 @@ class SearchDriver(DriverBase):
   def has_results(self, config):
     return self.results_query(config=config).count() > 0
 
-  def run_generation_techniques(self): #Michael generation
+  def run_generation_techniques(self): 
     tests_this_generation = 0
     self.plugin_proxy.before_techniques()
     for z in xrange(self.args.parallelism):
@@ -216,7 +216,7 @@ class SearchDriver(DriverBase):
         result.was_new_best = False
     self.result_callbacks()
 
-  def run_generation_results(self, offset=0): #Michael (Run_generation)
+  def run_generation_results(self, offset=0): 
     self.commit()
     self.plugin_proxy.before_results_wait()
     self.wait_for_results(self.generation + offset)
@@ -262,19 +262,17 @@ class SearchDriver(DriverBase):
       self.generation += 1
 
     while not self.convergence_criteria():
-      #print "262 driver"   #Michael
+      
       if self.run_generation_techniques() > 0:
         no_tests_generations = 0
       elif no_tests_generations <= self.args.bail_threshold:
         no_tests_generations += 1
       else:
         break
-      self.run_generation_results(offset=-self.args.pipelining) #Michael (Before result)
+      self.run_generation_results(offset=-self.args.pipelining) 
       self.generation += 1
 
-    List = self.plugin_proxy.after_main() #Michael Return List (Already order)
-    #print "MMM"
-    #print List
+    List = self.plugin_proxy.after_main() 
     return List
 
   def external_main_begin(self):
