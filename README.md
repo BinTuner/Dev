@@ -15,6 +15,21 @@ The client-side runs different compilers (GCC, LLVM ...) and the calculation of 
 
 Both sides communicate valid optimization options, fitness function scores, and compiled binaries to each other, and these data are stored in a database for future exploration. When BinTuner reaches a termination condition, we select the iterations showing the highest fitness function score and output the corresponding binary code as the final outcomes.
 
+Citation
+--------------------
+If you find our work helpful to your research, please consider citing our [paper](https://dl.acm.org/doi/abs/10.1145/3453483.3454035).
+
+``
+@inproceedings{ren2021unleashing,
+  title={Unleashing the hidden power of compiler optimization on binary code difference: An empirical study},
+  author={Ren, Xiaolei and Ho, Michael and Ming, Jiang and Lei, Yu and Li, Li},
+  booktitle={Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  pages={142--157},
+  year={2021}
+}
+``
+
+
 System dependencies
 --------------------
 
