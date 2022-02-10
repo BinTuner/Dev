@@ -19,7 +19,7 @@ Citation
 --------------------
 If you find our work helpful to your research, please consider citing our [paper](https://dl.acm.org/doi/abs/10.1145/3453483.3454035).
 
-``
+```
 @inproceedings{ren2021unleashing,
   title={Unleashing the hidden power of compiler optimization on binary code difference: An empirical study},
   author={Ren, Xiaolei and Ho, Michael and Ming, Jiang and Lei, Yu and Li, Li},
@@ -27,7 +27,7 @@ If you find our work helpful to your research, please consider citing our [paper
   pages={142--157},
   year={2021}
 }
-``
+```
 
 
 System dependencies
