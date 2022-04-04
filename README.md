@@ -3,6 +3,16 @@ BinTuner
 BinTuner is a cost-efficient auto-tuning framework, which can deliver a near-optimal binary code that reveals much more differences than -Ox settings. it also can assist the binary code analysis research in generating more diversified datasets for training and testing.
 The BinTuner framework is based on OpenTuner, thanks to all contributors for their contributions.
 
+April 4, 2022
+
+We have tested that BinTuner supports the latest GCC 11.2.0.
+
+```
+gcc-11 -m64 -std=gnu89 -fgnu89-inline  -DSPEC_CPU -DNDEBUG    401/spec.c 401/blocksort.c 401/bzip2.c 401/bzlib.c 401/compress.c 401/crctable.c 401/decompress.c 401/huffman.c 401/randtable.c -lm -o ./tmp0.bin -O3 -fno-auto-inc-dec -fbranch-count-reg -fcombine-stack-adjustments -fno-compare-elim -fno-cprop-registers -fno-dce -fdefer-pop -fno-delayed-branch -fno-dse -fno-forward-propagate -fno-guess-branch-probability -fif-conversion2 -fno-if-conversion -fno-inline-functions-called-once -fno-ipa-pure-const -fipa-profile -fno-ipa-reference -fmerge-constants -fno-move-loop-invariants -fno-reorder-blocks -fshrink-wrap -fsplit-wide-types -ftree-bit-ccp -ftree-ccp -ftree-ch -fno-tree-coalesce-vars -ftree-copy-prop -fno-tree-dce -fno-tree-dse -fno-tree-forwprop -fno-tree-fre -fno-tree-sink -ftree-slsr -fno-tree-sra -fno-tree-pta -ftree-ter -funit-at-a-time -fomit-frame-pointer -fno-tree-phiprop -ftree-dominator-opts -fno-ssa-backprop -fssa-phiopt -fshrink-wrap-separate -fno-thread-jumps -falign-functions -fno-align-labels -falign-loops -fno-caller-saves -fno-crossjumping -fcse-follow-jumps -fno-cse-skip-blocks -fdelete-null-pointer-checks -fno-devirtualize -fdevirtualize-speculatively -fexpensive-optimizations -fgcse -fgcse-lm -fno-hoist-adjacent-loads -finline-small-functions -findirect-inlining -fno-ipa-cp -fno-ipa-sra -fipa-icf -fno-isolate-erroneous-paths-dereference -flra-remat -foptimize-sibling-calls -fno-optimize-strlen -fno-partial-inlining -fno-peephole2 -freorder-blocks-and-partition -freorder-functions -fno-rerun-cse-after-loop -fsched-interblock -fsched-spec -fschedule-insns -fno-strict-aliasing -fstrict-overflow -ftree-builtin-call-dce -fno-tree-switch-conversion -ftree-tail-merge -fno-tree-pre -ftree-vrp -fipa-ra -fschedule-insns2 -fcode-hoisting -fno-store-merging -fno-ipa-bit-cp -fipa-vrp -fno-inline-functions -funswitch-loops -fno-predictive-commoning -fgcse-after-reload -ftree-loop-vectorize -ftree-loop-distribute-patterns -fno-tree-slp-vectorize -ftree-partial-pre -fno-peel-loops -fipa-cp-clone -fsplit-paths -ftree-vectorize -faggressive-loop-optimizations -falign-jumps -fallow-store-data-races -fno-associative-math -fassume-phsa -fno-asynchronous-unwind-tables -fno-bit-tests -fno-branch-probabilities -fconserve-stack -fno-cx-limited-range -fno-delete-dead-exceptions -fexceptions -ffast-math -fno-finite-loops -fno-finite-math-only -fno-float-store -ffp-int-builtin-inexact -ffunction-cse -fgcse-las -fno-gcse-sm -fgraphite -fgraphite-identity -finline -fno-inline-atomics -fipa-icf-functions -fno-ipa-icf-variables -fipa-modref -fipa-reference-addressable -fno-ipa-stack-alignment --param gcse-cost-distance-ratio=66 --param iv-max-considered-uses=211
+
+```
+
+
 The architecture of BinTuner:
 ---------------------
 ![image](https://github.com/BinTuner/Dev/blob/main/Results/Images/BinTuner.png)
@@ -102,7 +112,7 @@ Check to see if the compiler is installed
 e.g. 
 ```
 gcc -v  shows that
-gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04)
+gcc version 11.2.0 (Ubuntu 18.04)
 ```
 
 Please note that there have different optimization options in different versions of compilers. 
@@ -112,7 +122,7 @@ If you use the optimization options that are not included in this version of the
 It is strongly recommended to confirm that the optimization options are in the official instructions of GCC or LLVM before using them.
 
 e.g.
-[GCC version 10.2.0](https://gcc.gnu.org/onlinedocs/gcc-10.2.0/gcc/Optimize-Options.html#Optimize-Options).
+[GCC version 11.2.0](https://gcc.gnu.org/onlinedocs/gcc-11.2.0/gcc/Optimize-Options.html#Optimize-Options).
 
 You can also use the command to display all options in terminal
 ```
